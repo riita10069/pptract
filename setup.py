@@ -7,6 +7,6 @@ setup(
         py_modules=['pptract'],
         install_requires=find_packages(),
         entry_points={
-            "console_scripts": ['mdt = pptract:run']
+            "console_scripts": ['pptract = pptract:run']
         }
 )
