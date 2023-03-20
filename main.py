@@ -4,7 +4,7 @@ from pptx import Presentation
 
 @click.command()
 @click.argument('filepath')
-def extract_text(filepath):
+def run(filepath):
     if not os.path.exists(filepath):
         raise click.FileError(filepath, "File does not exist.")
 
@@ -25,4 +25,4 @@ def extract_text(filepath):
     click.echo('\n'.join(text_runs_arr))
 
 if __name__ == '__main__':
-    extract_text()
+    run()
